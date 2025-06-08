@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branches - Logistics Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fb;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+     color: hwb(26 0% 0%);
+    }
+
+    .box-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border: 1px solid #d0d8e0;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: rgb(0, 170, 255);
+    }
+
+    .box-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Tablet - 2 columns */
+    @media (max-width: 1024px) {
+      .box-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .box {
+        padding: 25px 18px;
+      }
+
+      .box-title {
+        font-size: 1.1rem;
+      }
+
+      .box-text {
+        font-size: 0.92rem;
+      }
+    }
+
+    /* Mobile - 1 column */
+    @media (max-width: 600px) {
+      .box-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+      }
+
+      .box {
+        padding: 22px 15px;
+      }
+
+      .box-title {
+        font-size: 1rem;
+      }
+
+      .box-text {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Branches</h1>
+
+
+
+
+  <div class="box-container">
+    <a href="./Branches/Salem.html" class="box">
+      <div class="box-title">Salem</div>
+      <div class="box-text">View Salem branch details</div>
+    </a>
+    <a href="./Branches/Erode.html" class="box">
+      <div class="box-title">Erode</div>
+      <div class="box-text">View Erode branch details</div>
+    </a>
+    <a href="./Branches/Coimbatore.html" class="box">
+      <div class="box-title">Coimbatore</div>
+      <div class="box-text">View Coimbatore branch details</div>
+    </a>
+    <a href="./Branches/Tirupur.html" class="box">
+      <div class="box-title">Tirupur</div>
+      <div class="box-text">View Tirupur branch details</div>
+    </a>
+    <a href="./Branches/Karur.html" class="box">
+      <div class="box-title">Karur</div>
+      <div class="box-text">View Karur branch details</div>
+    </a>
+    <a href="./Branches/Namakkal.html" class="box">
+      <div class="box-title">Namakkal</div>
+      <div class="box-text">View Namakkal branch details</div>
+    </a>
+  </div>
+
+</body>
+</html>
