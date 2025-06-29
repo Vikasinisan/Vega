@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin & Win</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: hsla(94, 81%, 73%, 0.888);
+      background-size: 800% 800%;
+      animation: gradientBG 20s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 16px 10px;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #333;
+      font-size: 30px;
+    }
+
+    #arrow {
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 35px solid #e53935;
+      margin: 20px auto;
+    }
+
+    #wheel {
+      width: 320px;
+      height: 320px;
+      border: 10px solid #333;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      transition: transform 4s ease-out;
+      background: radial-gradient(circle, #ffffff 0%, #f1f1f1 100%);
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    .segment {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      transform-origin: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+    }
+
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    #screenshot-msg {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ff5722;
+    }
+
+    #follow-msg {
+      font-size: 15px;
+      color: #d32f2f;
+      margin-top: 8px;
+    }
+
+    #win-date {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .insta-link {
+      display: inline-block;
+      margin-top: 12px;
+      margin-bottom: 30px;
+      padding: 10px 18px;
+      background: linear-gradient(to right, #fd5949, #d6249f, #285AEB);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .extra-info {
+      font-size: 15px;
+      color: #444;
+      max-width: 600px;
+      margin: 25px auto 10px;
+      padding: 0 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 14px 28px;
+      font-size: 18px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+
+    footer {
+      width: 100%;
+      background: #222;
+      color: #eee;
+      padding: 28px 20px;
+      font-size: 14px;
+      font-weight: 400;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 20px;
+      }
+      #wheel {
+        width: 220px;
+        height: 220px;
+      }
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+      h2 {
+        font-size: 24px;
+      }
+      #wheel {
+        width: 260px;
+        height: 260px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      h2 {
+        font-size: 28px;
+      }
+      #wheel {
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      h2 {
+        font-size: 32px;
+      }
+      #wheel {
+        width: 360px;
+        height: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>⚠️ This Coupon Is Only Valid For International Courier</header>
+
+  <main>
+    <h2>🎁 Spin & Win a Coupon</h2>
+    <div id="arrow"></div>
+    <div id="wheel"></div>
+    <button onclick="spin()" id="spinBtn">SPIN</button>
+
+    <div id="result"></div>
+    <div id="screenshot-msg"></div>
+    <div id="follow-msg"></div>
+    <div id="win-date"></div>
+    <a id="insta-link" class="insta-link" href="#" target="_blank" style="display:none;">Follow on Instagram</a>
+
+    <div class="extra-info">
+      ✨ Use the code above at checkout for your next international courier. Offer valid twice per week. Follow all steps carefully to claim.
+    </div>
+  </main>
+
+<footer>
+  &copy; 2025 Spin & Win | VegaVega.in — All rights reserved.<br>
+  Built with ❤️ for global users. Follow us on Instagram to never miss a deal.
+</footer>
+
+  <script>
+    const prizes = [
+      "Better Luck Next Time",
+      "₹280 OFF - Code: SAVE10",
+      "₹300 OFF - Code: WIN100",
+      "₹275 OFF - Code: HALFOFF",
+      "₹270 Gift - Code: GIFTME",
+      "Better Luck Next Time"
+    ];
+
+    const segmentAngle = 360 / prizes.length;
+    const wheel = document.getElementById("wheel");
+    const result = document.getElementById("result");
+    const screenshotMsg = document.getElementById("screenshot-msg");
+    const followMsg = document.getElementById("follow-msg");
+    const winDate = document.getElementById("win-date");
+    const spinBtn = document.getElementById("spinBtn");
+    const instaLink = document.getElementById("insta-link");
+
+    prizes.forEach((text, index) => {
+      const seg = document.createElement("div");
+      seg.className = "segment";
+      seg.style.transform = `rotate(${index * segmentAngle}deg) skewY(-60deg)`;
+      seg.style.backgroundColor = index % 2 === 0 ? "#6A1B9A" : "#0288D1";
+      seg.innerText = text.split("-")[0].trim();
+      wheel.appendChild(seg);
+    });
+
+    let spinning = false;
+
+    function spin() {
+      if (spinning) return;
+
+      const today = new Date();
+      const todayStr = today.toDateString();
+      const weekStart = new Date(today);
+      weekStart.setDate(weekStart.getDate() - weekStart.getDay());
+
+      let spinData = JSON.parse(localStorage.getItem("spinData")) || { week: weekStart.toDateString(), count: 0 };
+
+      if (spinData.week !== weekStart.toDateString()) {
+        spinData = { week: weekStart.toDateString(), count: 0 };
+      }
+
+      if (spinData.count >= 2) {
+        result.innerText = "❌ You already used 2 spins this week.";
+        screenshotMsg.innerText = "";
+        followMsg.innerText = "";
+        winDate.innerText = "";
+        instaLink.style.display = "none";
+        return;
+      }
+
+      spinning = true;
+      spinBtn.disabled = true;
+
+      const randomIndex = Math.floor(Math.random() * prizes.length);
+      const degrees = 3600 + (360 - randomIndex * segmentAngle - segmentAngle / 2);
+      wheel.style.transform = `rotate(${degrees}deg)`;
+
+      setTimeout(() => {
+        const prize = prizes[randomIndex];
+        result.innerText = `🎉 Result: ${prize}`;
+
+          if (!prize.toLowerCase().includes("better luck")) {
+            screenshotMsg.innerText = "📸 Please take a screenshot and show to the office.";
+            followMsg.innerText = "⚠ This coupon is valid only if you follow our Instagram page.\n⚠ It is also valid only for 15 days from today.";
+            winDate.innerText = `📅 Date: ${todayStr}`;
+            instaLink.style.display = "inline-block";
+            instaLink.href = "https://www.instagram.com/vega_logistics_?igsh=MnJ1YXNqZDloeWo5";
+          }else {
+          screenshotMsg.innerText = "";
+          followMsg.innerText = "";
+          winDate.innerText = "";
+          instaLink.style.display = "none";
+        }
+
+        spinData.count += 1;
+        localStorage.setItem("spinData", JSON.stringify(spinData));
+
+        spinning = false;
+        spinBtn.disabled = false;
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
