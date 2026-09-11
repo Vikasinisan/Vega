@@ -1,644 +1,851 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Logistics - Shipping Company Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vega Logistics — Parcel & Courier Service in Tamil Nadu | vegavega.in</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="keywords" content="vega logistics, tamil nadu courier service, parcel delivery tamil nadu, courier coimbatore, courier salem, courier karur, courier erode, courier tirupur, courier namakkal, shipping company tamil nadu, cargo service tamil nadu, vegavega.in" />
+    <meta name="description" content="Vega Logistics — Fast and reliable parcel delivery & courier service across Tamil Nadu. Branches in Coimbatore, Salem, Karur, Erode, Tirupur, Namakkal and more. Call 7788822777." />
+    <link rel="canonical" href="https://vegavega.in/index.html" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/vega logo.jpg" rel="icon" />
+
+    <!-- SEO: LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Vega Logistics",
+      "url": "https://vegavega.in",
+      "logo": "https://vegavega.in/img/vega logo.jpg",
+      "telephone": "+917788822777",
+      "description": "Fast and reliable parcel delivery and courier service across Tamil Nadu including Coimbatore, Salem, Karur, Erode, Tirupur and Namakkal.",
+      "areaServed": ["Coimbatore", "Salem", "Karur", "Erode", "Tirupur", "Namakkal", "Tamil Nadu"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "sameAs": ["https://vegavega.in"]
+    }
+    </script>
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
     <style>
-        /* Animation */
-        @keyframes colorChange {
-            25% {
-                color: #ec4899;
-            }
-
-            50% {
-                color: #8b5cf6;
-            }
-
-            75% {
-                color: hwb(32 18% 18%);
-            }
-
-            100% {
-                color: lab(53.23% 80.11 67.22);
-            }
-
-            25% {
-                color: #ec4899;
-            }
-
-
+      /* Animation */
+      @keyframes colorChange {
+        25% {
+          color: #ec4899;
         }
 
-
-
-        .color-glow {
-            animation: colorChange 1s ease-in-out infinite;
-            font-weight: bold;
+        50% {
+          color: #8b5cf6;
         }
 
-        /* Base style */
-        @media (max-width: 768px) {
-            .spin-btn {
-                margin-top: 1px;
-            }
+        75% {
+          color: hwb(32 18% 18%);
         }
+
+        100% {
+          color: lab(53.23% 80.11 67.22);
+        }
+
+        25% {
+          color: #ec4899;
+        }
+      }
+
+      .color-glow {
+        animation: colorChange 1s ease-in-out infinite;
+        font-weight: bold;
+      }
+
+      /* Base style */
+      @media (max-width: 768px) {
+        .spin-btn {
+          margin-top: 1px;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only"></span>
-        </div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only"></span>
+      </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0"
+    >
+      <a
+        href="index.html"
+        class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5"
+      >
+        <img src="./img/vega logo.jpg" alt="Logo" class="vega-logo me-2" />
+        <h2 class="mb-2 text-white">Vega Logistics</h2>
+      </a>
 
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <img src="./img/vega logo.jpg" alt="Logo" class="vega-logo me-2">
-            <h2 class="mb-2 text-white">Vega Logistics</h2>
-        </a>
-
-
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-
-            </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+91 94421 26665
-            </h4>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="service.html" class="nav-item nav-link">Services</a>
         </div>
+        <h4 class="m-0 pe-lg-5 d-none d-lg-block">
+          <i class="fa fa-headphones text-primary me-3"></i>+91 94421 26665
+        </h4>
+      </div>
     </nav>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5">
-        <div class="owl-carousel header-carousel position-relative mb-5">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="./img/back.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Courier & Logistics
-                                    Partner</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Your Trusted <span
-                                        class="text-primary">Logistics</span> Partner</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">We provide courier services to the USA,
-                                    London, Canada, Australia, Singapore, New Zealand, UAE and other international
-                                    locations. </p>
-                                <div class="button-container">
-                                    <a href="box.html"
-                                        class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Branch
-                                        Details</a>
-                                    <a href="coupon.html"
-                                        class="btn btn-secondary py-md-3 px-md-5 animated slideInRight color-glow colorChange spin-btn">Spin
-                                        To Get Coupon</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="owl-carousel header-carousel position-relative mb-5">
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="./img/back.jpg" alt="" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(6, 3, 21, 0.5)"
+          >
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h5
+                    class="text-white text-uppercase mb-3 animated slideInDown"
+                  >
+                    Courier & Logistics Partner
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown mb-4">
+                    Your Trusted
+                    <span class="text-primary">Logistics</span> Partner
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                    We provide courier services to the USA, London, Canada,
+                    Australia, Singapore, New Zealand, UAE and other
+                    international locations.
+                  </p>
+                  <div class="button-container">
+                    <a
+                      href="box.html"
+                      class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                      >Branch Details</a
+                    >
+                    <a
+                      href="coupon.html"
+                      class="btn btn-secondary py-md-3 px-md-5 animated slideInRight color-glow colorChange spin-btn"
+                      >Spin To Get Coupon</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="./img/back 2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Courier & Delivery</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Experience Smart <span
-                                        class="text-primary">Logistics</span> with Vega</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">From first mile to last, Vega Logistics
-                                    ensures timely and safe delivery. Trusted by businesses, driven by excellence.</p>
-                                <div class="button-container">
-                                    <a href="box.html"
-                                        class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Branch
-                                        Details</a>
-                                    <a href="coupon.html"
-                                        class="btn btn-secondary py-md-3 px-md-5 animated slideInRight color-glow colorChange spin-btn">Spin
-                                        To Get Coupon</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="./img/back 2.jpg" alt="" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(6, 3, 21, 0.5)"
+          >
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h5
+                    class="text-white text-uppercase mb-3 animated slideInDown"
+                  >
+                    Courier & Delivery
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown mb-4">
+                    Experience Smart
+                    <span class="text-primary">Logistics</span> with Vega
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                    From first mile to last, Vega Logistics ensures timely and
+                    safe delivery. Trusted by businesses, driven by excellence.
+                  </p>
+                  <div class="button-container">
+                    <a
+                      href="box.html"
+                      class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                      >Branch Details</a
+                    >
+                    <a
+                      href="coupon.html"
+                      class="btn btn-secondary py-md-3 px-md-5 animated slideInRight color-glow colorChange spin-btn"
+                      >Spin To Get Coupon</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Carousel End -->
 
-
-
-
     <!-- CEO Start -->
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
-        <div class="container feature py-5 px-lg-0">
-            <div class="row align-items-center gx-4 gy-5 mx-lg-0">
-                <!-- Text Section -->
-                <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">CEO</h6>
-                    <h1 class="mb-4">Garuda Shiva Leading Vega Logistics with Excellence</h1>
-                    <p class="mb-4">With 15+ years of experience, Garuda Shiva drives Vega Logistics with strong
-                        leadership, strategic insight, and a clear focus on customer satisfaction.</p>
+      <div class="container feature py-5 px-lg-0">
+        <div class="row align-items-center gx-4 gy-5 mx-lg-0">
+          <!-- Text Section -->
+          <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase mb-3">CEO</h6>
+            <h1 class="mb-4">
+              Garuda Shiva Leading Vega Logistics with Excellence
+            </h1>
+            <p class="mb-4">
+              With 15+ years of experience, Garuda Shiva drives Vega Logistics
+              with strong leadership, strategic insight, and a clear focus on
+              customer satisfaction.
+            </p>
 
-                    <div class="d-flex mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <i class="fa fa-bullseye text-primary fa-3x flex-shrink-0" style="margin-left:15px;"></i>
-                        <div class="ms-4">
-                            <h5>Visionary Leadership</h5>
-                            <p class="mb-0">Driving innovation and setting clear goals for global growth.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-4 wow fadeIn" data-wow-delay="0.5s">
-                        <i class="fa fa-hands-helping text-primary fa-3x flex-shrink-0"></i>
-
-                        <div class="ms-4">
-                            <h5>Client Focused</h5>
-                            <p class="mb-0">Building trust and delivering value in every logistics journey.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <i class="fa fa-cogs text-primary fa-3x flex-shrink-0"></i>
-                        <div class="ms-4">
-                            <h5>Industry Expert</h5>
-                            <p class="mb-0">Expert in transport strategy, logistics, and operations.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Section (Larger, Closer) -->
-                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
-                    <div class="position-relative d-flex justify-content-center align-items-center">
-                        <img class="img-fluid shadow" src="./img/dad.jpg" alt="CEO Sivasubramaniam K"
-                            style="width: 360px; margin-top: 50px; height: 440px; object-fit: cover; border-radius: 10px; border: 3px solid hsl(187, 100%, 50%);">
-                    </div>
-                </div>
+            <div class="d-flex mb-4 wow fadeInUp" data-wow-delay="0.3s">
+              <i
+                class="fa fa-bullseye text-primary fa-3x flex-shrink-0"
+                style="margin-left: 15px"
+              ></i>
+              <div class="ms-4">
+                <h5>Visionary Leadership</h5>
+                <p class="mb-0">
+                  Driving innovation and setting clear goals for global growth.
+                </p>
+              </div>
             </div>
+            <div class="d-flex mb-4 wow fadeIn" data-wow-delay="0.5s">
+              <i
+                class="fa fa-hands-helping text-primary fa-3x flex-shrink-0"
+              ></i>
+
+              <div class="ms-4">
+                <h5>Client Focused</h5>
+                <p class="mb-0">
+                  Building trust and delivering value in every logistics
+                  journey.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+              <i class="fa fa-cogs text-primary fa-3x flex-shrink-0"></i>
+              <div class="ms-4">
+                <h5>Industry Expert</h5>
+                <p class="mb-0">
+                  Expert in transport strategy, logistics, and operations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Section (Larger, Closer) -->
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+            <div
+              class="position-relative d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="img-fluid shadow"
+                src="./img/dad.jpg"
+                alt="CEO Sivasubramaniam K"
+                style="
+                  width: 360px;
+                  margin-top: 50px;
+                  height: 440px;
+                  object-fit: cover;
+                  border-radius: 10px;
+                  border: 3px solid hsl(187, 100%, 50%);
+                "
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
     <!-- CEO End -->
 
-
-
-
-
-
-
     <!-- Pricing Start -->
 
-
-
     <div
-        style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-        <h2
-            style="text-align: center; color: #555; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">
-            Pricing Plan</h2>
-        <h1 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #111;">Perfect Pricing Plan</h1>
+      style="
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+      "
+    >
+      <h2
+        style="
+          text-align: center;
+          color: #555;
+          font-size: 18px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+        "
+      >
+        Pricing Plan
+      </h2>
+      <h1
+        style="
+          text-align: center;
+          font-size: 36px;
+          margin-bottom: 40px;
+          color: #111;
+        "
+      >
+        Perfect Pricing Plan
+      </h1>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-
-            <!-- USA Pricing -->
-            <div
-                style="flex: 1 1 300px; border: 1px solid #ccc; border-radius: 12px; padding: 20px; background: #f9f9f9; transition: transform 0.3s ease;">
-                <h3 style="color: #007bff; margin-bottom: 10px;">USA</h3>
-                <p style="margin: 8px 0;">DHL: 3 KG-6000 RS, 5 KG-8300 RS, 21KG-1050 RUPEES PER KG RS Including 18% GST
-                </p>
-                <p style="margin: 8px 0;">FEDEX: 3 KG-4600 RS, 5KG-6000 RS, 21+ 930 RUPEES PER KG Including 18% GST</p>
-            </div>
-
-            <!-- UK Pricing -->
-            <div
-                style="flex: 1 1 300px; border: 1px solid #ccc; border-radius: 12px; padding: 20px; background: #f9f9f9;">
-                <h3 style="color: #007bff; margin-bottom: 10px;">UK</h3>
-                <p style="margin: 8px 0;">Self: 6KG-4300, 15KG-9900, 21+ 600 RUPEES PER KG Including 18% GST</p>
-            </div>
-
-            <!-- Canada Pricing -->
-            <div
-                style="flex: 1 1 300px; border: 1px solid #ccc; border-radius: 12px; padding: 20px; background: #f9f9f9;">
-                <h3 style="color: #007bff; margin-bottom: 10px;">Canada</h3>
-                <p style="margin: 8px 0;">DHL: 5KG-8300 Including 18% GST</p>
-                <p style="margin: 8px 0;">21Kg-1500 PER KG Including 18% GST</p>
-                <p style="margin: 8px 0;">FEDEX: 21+ 940 RUPEES PER KG Including 18% GST</p>
-            </div>
-
-
-
-            <!-- Other Locations -->
-            <div
-                style="flex: 1 1 300px; border: 1px solid #ccc; border-radius: 12px; padding: 20px; background: #f9f9f9;">
-                <h3 style="color: #007bff; margin-bottom: 10px;">Others</h3>
-                <p style="margin: 8px 0;">Singapore, Srilanka, Dubai, Malaysia: Self – Very Low Price</p>
-            </div>
-
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        "
+      >
+        <!-- USA Pricing -->
+        <div
+          style="
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            background: #f9f9f9;
+            transition: transform 0.3s ease;
+          "
+        >
+          <h3 style="color: #007bff; margin-bottom: 10px">USA</h3>
+          <p style="margin: 8px 0">
+            DHL: 3 KG-6000 RS, 5 KG-8300 RS, 21KG-1050 RUPEES PER KG RS
+            Including 18% GST
+          </p>
+          <p style="margin: 8px 0">
+            FEDEX: 3 KG-4600 RS, 5KG-6000 RS, 21+ 930 RUPEES PER KG Including
+            18% GST
+          </p>
         </div>
-    </div>
 
+        <!-- UK Pricing -->
+        <div
+          style="
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            background: #f9f9f9;
+          "
+        >
+          <h3 style="color: #007bff; margin-bottom: 10px">UK</h3>
+          <p style="margin: 8px 0">
+            Self: 6KG-4300, 15KG-9900, 21+ 600 RUPEES PER KG Including 18% GST
+          </p>
+        </div>
+
+        <!-- Canada Pricing -->
+        <div
+          style="
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            background: #f9f9f9;
+          "
+        >
+          <h3 style="color: #007bff; margin-bottom: 10px">Canada</h3>
+          <p style="margin: 8px 0">DHL: 5KG-8300 Including 18% GST</p>
+          <p style="margin: 8px 0">21Kg-1500 PER KG Including 18% GST</p>
+          <p style="margin: 8px 0">
+            FEDEX: 21+ 940 RUPEES PER KG Including 18% GST
+          </p>
+        </div>
+
+        <!-- Other Locations -->
+        <div
+          style="
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            background: #f9f9f9;
+          "
+        >
+          <h3 style="color: #007bff; margin-bottom: 10px">Others</h3>
+          <p style="margin: 8px 0">
+            Singapore, Srilanka, Dubai, Malaysia: Self – Very Low Price
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Pricing End -->
 
-
-
     <!-- Team Start -->
     <section class="product-section">
-        <div class="product-container">
-            <h2 class="product-heading">We Deliver the Following Items to Your Doorstep</h2>
-            <p class="product-subheading">Sweets, Snacks, Spices, Tamarind, Grains, Cloths, Medicines & more</p>
-            <a href="ProductsList.html" class="product-button">View All Products</a>
-        </div>
+      <div class="product-container">
+        <h2 class="product-heading">
+          We Deliver the Following Items to Your Doorstep
+        </h2>
+        <p class="product-subheading">
+          Sweets, Snacks, Spices, Tamarind, Grains, Cloths, Medicines & more
+        </p>
+        <a href="ProductsList.html" class="product-button">View All Products</a>
+      </div>
     </section>
 
     <!-- Team End -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- About Start -->
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
-        <div class="container about py-5 px-lg-0">
-            <div class="row g-5 align-items-center mx-lg-0">
-                <!-- Image Section -->
-                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                    <div class="p-3 shadow rounded h-100 bg-white">
-                        <img src="./img/pack.jpg" alt="About Vega Logistics" class="img-fluid w-100"
-                            style="height: 420px; object-fit: cover; border-radius: 8px;">
-                    </div>
-                </div>
-
-                <!-- Text Section -->
-                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="text-secondary text-uppercase mb-3">About Us</h6>
-                    <h1 class="mb-4">Vega Logistics – Efficient and Courier Logistics and Solutions</h1>
-                    <p class="mb-4">
-                        At Vega Logistics, we deliver fast, secure, and dependable logistics services. We focus on
-                        customer satisfaction, ensuring smooth and timely delivery of your food items, grocery, clothes
-                        all over the world to your loving families and friends.
-                    </p>
-                    <div class="row g-4">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Global Reach</h5>
-                            <p class="m-0">Connecting businesses across India and worldwide markets.</p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Timely Delivery</h5>
-                            <p class="m-0">Delivering your courier on time, safely and efficiently.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container about py-5 px-lg-0">
+        <div class="row g-5 align-items-center mx-lg-0">
+          <!-- Image Section -->
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="p-3 shadow rounded h-100 bg-white">
+              <img
+                src="./img/pack.jpg"
+                alt="About Vega Logistics"
+                class="img-fluid w-100"
+                style="height: 420px; object-fit: cover; border-radius: 8px"
+              />
             </div>
+          </div>
+
+          <!-- Text Section -->
+          <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+            <h6 class="text-secondary text-uppercase mb-3">About Us</h6>
+            <h1 class="mb-4">
+              Vega Logistics – Efficient and Courier Logistics and Solutions
+            </h1>
+            <p class="mb-4">
+              At Vega Logistics, we deliver fast, secure, and dependable
+              logistics services. We focus on customer satisfaction, ensuring
+              smooth and timely delivery of your food items, grocery, clothes
+              all over the world to your loving families and friends.
+            </p>
+            <div class="row g-4">
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+                <h5>Global Reach</h5>
+                <p class="m-0">
+                  Connecting businesses across India and worldwide markets.
+                </p>
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
+                <h5>Timely Delivery</h5>
+                <p class="m-0">
+                  Delivering your courier on time, safely and efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
-
-
 
     <!-- About End -->
 
-
     <!-- Fact Start -->
     <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Some Facts</h6>
-                    <h1 class="mb-5">Delivering Excellence in Every Shipment</h1>
-                    <p class="mb-5">
-                        Vega Logistics ensures safe, on-time delivery across the World. With years of experience, we
-                        manage your shipments with care, speed, and reliability.
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
-                        <div class="ps-4">
-                            <h6>Call for any query!</h6>
-                            <h3 class="text-primary m-0">+91 77888 15000</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-sm-6">
-                            <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
-                                <i class="fa fa-users fa-2x text-white mb-3"></i>
-                                <h2 class="text-white mb-2" data-toggle="counter-up">+25254</h2>
-                                <p class="text-white mb-0">Happy Clients</p>
-                            </div>
-
-                        </div>
-                        <div style="margin-top: 15px;" class="col-sm-6">
-                            <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
-                                <i class="fa fa-star fa-2x text-white mb-3"></i>
-                                <h2 class="text-white mb-2" data-toggle="counter-up">+5142</h2>
-                                <p class="text-white mb-0">Customer Reviews</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase mb-3">Some Facts</h6>
+            <h1 class="mb-5">Delivering Excellence in Every Shipment</h1>
+            <p class="mb-5">
+              Vega Logistics ensures safe, on-time delivery across the World.
+              With years of experience, we manage your shipments with care,
+              speed, and reliability.
+            </p>
+            <div class="d-flex align-items-center">
+              <i
+                class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"
+              ></i>
+              <div class="ps-4">
+                <h6>Call for any query!</h6>
+                <h3 class="text-primary m-0">+91 77888 15000</h3>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+              <div class="col-sm-6">
+                <div
+                  class="bg-primary p-4 mb-4 wow fadeIn"
+                  data-wow-delay="0.3s"
+                >
+                  <i class="fa fa-users fa-2x text-white mb-3"></i>
+                  <h2 class="text-white mb-2" data-toggle="counter-up">
+                    +25254
+                  </h2>
+                  <p class="text-white mb-0">Happy Clients</p>
+                </div>
+              </div>
+              <div style="margin-top: 15px" class="col-sm-6">
+                <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
+                  <i class="fa fa-star fa-2x text-white mb-3"></i>
+                  <h2 class="text-white mb-2" data-toggle="counter-up">
+                    +5142
+                  </h2>
+                  <p class="text-white mb-0">Customer Reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Fact End -->
 
-
     <!-- Service Start -->
     <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Our Services</h6>
-                <h1 class="mb-5">Explore Our Services</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Air Freight</h4>
-                        <p>Fast and secure air transport for your goods, ensuring timely and safe delivery worldwide.
-                        </p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Ocean Freight</h4>
-                        <p>Cost-effective and reliable sea transport for large volumes across international waters.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Road Freight</h4>
-                        <p>Reliable road transport for domestic and cross-border delivery, with full tracking support.
-                        </p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="text-secondary text-uppercase">Our Services</h6>
+          <h1 class="mb-5">Explore Our Services</h1>
         </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="img/service-1.jpg" alt="" />
+              </div>
+              <h4 class="mb-3">Air Freight</h4>
+              <p>
+                Fast and secure air transport for your goods, ensuring timely
+                and safe delivery worldwide.
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="img/service-2.jpg" alt="" />
+              </div>
+              <h4 class="mb-3">Ocean Freight</h4>
+              <p>
+                Cost-effective and reliable sea transport for large volumes
+                across international waters.
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="img/service-3.jpg" alt="" />
+              </div>
+              <h4 class="mb-3">Road Freight</h4>
+              <p>
+                Reliable road transport for domestic and cross-border delivery,
+                with full tracking support.
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Service End -->
 
-
     <!-- Feature Start -->
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
-        <div class="container feature py-5 px-lg-0">
-            <div class="row g-5 mx-lg-0 align-items-stretch">
-                <!-- Text Section -->
-                <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
-                    <h1 class="mb-5">Vega Logistics – Trusted Since 2015</h1>
+      <div class="container feature py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0 align-items-stretch">
+          <!-- Text Section -->
+          <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
+            <h1 class="mb-5">Vega Logistics – Trusted Since 2015</h1>
 
-                    <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
-                        <div class="ms-4">
-                            <h5>Worldwide Service</h5>
-                            <p class="mb-0">
-                                We deliver across the globe, helping businesses reach international markets with ease.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
-                        <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
-                        <div class="ms-4">
-                            <h5>On-Time Delivery</h5>
-                            <p class="mb-0">
-                                We ensure fast delivery of food items on Time.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
-                        <div class="ms-4">
-                            <h5>24/7 Support</h5>
-                            <p class="mb-0">
-                                Our team is available anytime to assist you with queries or updates.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Section -->
-                <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
-                    <div class="p-3 bg-white rounded-3 shadow-sm h-100 d-flex align-items-center">
-                        <img src="./img/guyssss.jpg" class="img-fluid w-100"
-                            style="min-height: 300px; max-height: 100%; object-fit: cover; border-radius: 8px;"
-                            alt="Your Image" />
-                    </div>
-                </div>
+            <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+              <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
+              <div class="ms-4">
+                <h5>Worldwide Service</h5>
+                <p class="mb-0">
+                  We deliver across the globe, helping businesses reach
+                  international markets with ease.
+                </p>
+              </div>
             </div>
+
+            <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+              <i
+                class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"
+              ></i>
+              <div class="ms-4">
+                <h5>On-Time Delivery</h5>
+                <p class="mb-0">
+                  We ensure fast delivery of food items on Time.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+              <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
+              <div class="ms-4">
+                <h5>24/7 Support</h5>
+                <p class="mb-0">
+                  Our team is available anytime to assist you with queries or
+                  updates.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Section -->
+          <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
+            <div
+              class="p-3 bg-white rounded-3 shadow-sm h-100 d-flex align-items-center"
+            >
+              <img
+                src="./img/guyssss.jpg"
+                class="img-fluid w-100"
+                style="
+                  min-height: 300px;
+                  max-height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px;
+                "
+                alt="Your Image"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
-
-
 
     <!-- Testimonial Start -->
 
-
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="text-center">
-                <h6 class="text-secondary text-uppercase">Testimonial</h6>
-                <h1 class="mb-0">What Our Clients Say</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/r4.jpg"
-                            style="width: 80px; height: 80px; border-radius: 50%;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Ravi Kumar</h5>
-                            <p class="m-0">Business Owner</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Vega Logistics handled my shipment smoothly—on time, no damage, and great support
-                        throughout.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/r3.jpg"
-                            style="width: 80px; height: 80px; border-radius: 50%;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Meena Joseph</h5>
-                            <p class="m-0">Retailer</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Fast delivery and everything arrived in good condition. The team was friendly and
-                        helpful.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/r6.jpg"
-                            style="width: 80px; height: 80px; border-radius: 50%;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Arun Prakash</h5>
-                            <p class="m-0">E-commerce Seller</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Very satisfied with the quick and careful service. Packages were secure and tracking
-                        was easy.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/r2.jpg"
-                            style="width: 80px; height: 80px; border-radius: 50%;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Sangeetha R</h5>
-                            <p class="m-0">Corporate Client</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Goods arrived safely and on time. The process was smooth and professional from start
-                        to finish.</p>
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="text-center">
+          <h6 class="text-secondary text-uppercase">Testimonial</h6>
+          <h1 class="mb-0">What Our Clients Say</h1>
         </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="testimonial-item p-4 my-5">
+            <i
+              class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+            ></i>
+            <div class="d-flex align-items-end mb-4">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/r4.jpg"
+                style="width: 80px; height: 80px; border-radius: 50%"
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Ravi Kumar</h5>
+                <p class="m-0">Business Owner</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              Vega Logistics handled my shipment smoothly—on time, no damage,
+              and great support throughout.
+            </p>
+          </div>
+          <div class="testimonial-item p-4 my-5">
+            <i
+              class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+            ></i>
+            <div class="d-flex align-items-end mb-4">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/r3.jpg"
+                style="width: 80px; height: 80px; border-radius: 50%"
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Meena Joseph</h5>
+                <p class="m-0">Retailer</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              Fast delivery and everything arrived in good condition. The team
+              was friendly and helpful.
+            </p>
+          </div>
+          <div class="testimonial-item p-4 my-5">
+            <i
+              class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+            ></i>
+            <div class="d-flex align-items-end mb-4">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/r6.jpg"
+                style="width: 80px; height: 80px; border-radius: 50%"
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Arun Prakash</h5>
+                <p class="m-0">E-commerce Seller</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              Very satisfied with the quick and careful service. Packages were
+              secure and tracking was easy.
+            </p>
+          </div>
+          <div class="testimonial-item p-4 my-5">
+            <i
+              class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+            ></i>
+            <div class="d-flex align-items-end mb-4">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/r2.jpg"
+                style="width: 80px; height: 80px; border-radius: 50%"
+              />
+              <div class="ms-4">
+                <h5 class="mb-1">Sangeetha R</h5>
+                <p class="m-0">Corporate Client</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              Goods arrived safely and on time. The process was smooth and
+              professional from start to finish.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
 
     <!-- Testimonial End -->
 
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
-        style="margin-top: 6rem;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sangeetha Sivasubramaniam, Siva Mansion,
-                        Building No. 15, Muthu Pudur, 1st Street, Behind Old Bus Stand, Shanthi Lodge, Tirupur - 641604,
-                        TamilNadu, India</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9790531113<br>+91 77888 15000</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@vegavega.in"
-                            style="color: inherit; text-decoration: none;">info@vegavega.in</a></p>
+    <div
+      class="container-fluid bg-dark text-light footer pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+      style="margin-top: 6rem"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Address</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Sangeetha
+              Sivasubramaniam, Siva Mansion, Building No. 15, Muthu Pudur, 1st
+              Street, Behind Old Bus Stand, Shanthi Lodge, Tirupur - 641604,
+              TamilNadu, India
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 9790531113<br />+91 77888
+              15000
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i
+              ><a
+                href="mailto:info@vegavega.in"
+                style="color: inherit; text-decoration: none"
+                >info@vegavega.in</a
+              >
+            </p>
 
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social me-4"
-                            href="https://www.facebook.com/share/16gvk21gi3/?mibextid=wwXIfr"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://www.instagram.com/vega_logistics_?igsh=MnJ1YXNqZDloeWo5"><i
-                                class="fab fa-instagram"></i></a>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Air Freight</a>
-                    <a class="btn btn-link" href="">Sea Freight</a>
-                    <a class="btn btn-link" href="">Road Freight</a>
-
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social me-4"
+                href="https://www.facebook.com/share/16gvk21gi3/?mibextid=wwXIfr"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.instagram.com/vega_logistics_?igsh=MnJ1YXNqZDloeWo5"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Services</h4>
+            <a class="btn btn-link" href="">Air Freight</a>
+            <a class="btn btn-link" href="">Sea Freight</a>
+            <a class="btn btn-link" href="">Road Freight</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Our Services</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">Support</a>
+          </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Vega Vega</a>, All Right Reserved.
-                    </div>
-                </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Vega Vega</a>, All Right
+              Reserved.
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -651,10 +858,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js">
-        setTimeout(() => {
-            document.querySelector('.color-glow')?.classList.remove('color-glow');
-        }, 8000);
+      setTimeout(() => {
+          document.querySelector('.color-glow')?.classList.remove('color-glow');
+      }, 8000);
     </script>
-</body>
-
+  </body>
 </html>
